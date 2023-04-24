@@ -1,0 +1,70 @@
+/* start variables */
+:root {
+    --min-color: #003D2D;
+}
+
+/* end variables */
+
+/* start home  */
+
+.home .container .card-log {
+    height: 810px;
+}
+
+.home .card-log .card-info .card-head {
+    text-align: center;
+}
+
+.home .card-log .card-info .card-head .image img {
+    width: 64px;
+}
+
+.home .card-log .card-info .card-head h3 {
+    margin: 4px 0 42px 0;
+}
+
+
+.home .card-log .card-info .card-form input {
+    margin-top: 9px;
+}
+
+.home .card-log .card-info .card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home .card-log .card-info .card-foot .item a {
+    display: inline-block;
+    font: normal normal normal 20px/27px Gadugi;
+    letter-spacing: -0.96px;
+    color: #30DA7D;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 10px 0 ;
+}
+
+.home .card-log .card-info .card-foot .item a.mg {
+    margin-left: 0;
+}
+
+/* end home  */
+
+/* start media  */
+
+@media (max-width: 550px) {
+    .home .container .card-log {
+        height: 910px;
+    }
+    .home .card-log .card-info .card-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home .card-log .card-info .card-foot .item a {
+        margin-left: 0;
+        padding: 10px 5px ;
+    }
+} 

@@ -1,0 +1,16 @@
+.home .container .card-log {
+    height: 780px;
+}
+
+.home .card-log .card-info .card-foot {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home .card-log .card-info .card-foot span a.mg {
+    margin-top: 40px;
+}
+
+.home .card-log .card-info .card-foot span a {
+    margin-left: 30px;
+}

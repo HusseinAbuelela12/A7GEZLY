@@ -1,0 +1,161 @@
+/* start variables */
+:root {
+    --min-color: #003D2D;
+}
+
+/* end variables */
+
+/* start header  */
+
+header .header-links i {
+    text-align: right;
+}
+
+header .header-links {
+    flex-basis: 40%;
+}
+
+header .header-content {
+    box-shadow: 0 0 0 #ffffff;
+    border-bottom: 0;
+}
+
+/* end header  */
+
+/* start home  */
+
+.home {
+    background-color: #ffffff;
+}
+
+.home .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.home .container .card-log {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 9999;
+    width: 841px;
+    height: 694px;
+}
+
+.home .container .card-log .card-info {
+    margin: 34px 24px;
+}
+
+.home .card-log .card-info .card-head h3 {
+    margin: 46px 0 46px 41px;
+    font: normal normal bold 31px/41px Gadugi;
+    letter-spacing: 4.53px;
+}
+
+.home .card-log .card-info .card-form label {
+    margin-top: 18px;
+    display: block;
+    font: normal normal normal 26px/35px Gadugi;
+    letter-spacing: -1.25px;
+    color: var(--min-color);
+}
+
+.home .card-log .card-info .card-form button ,
+.home .card-log .card-info .card-form input {
+    display: block;
+    width: 798px;
+    height: 61px;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    border: 2px solid #f0f0f0;
+    border-radius: 6px;
+}
+
+.home .card-log .card-info .card-form input::placeholder {
+    font: normal normal normal 21px/28px Gadugi;
+    padding: 17px 14px;
+    letter-spacing: -1.01px;
+    color: var(--min-color);
+    opacity: 0.67;
+}
+
+.home .card-log .card-info .card-form button {
+    margin-top: 70px;
+    font: normal normal normal 21px/28px Gadugi;
+    letter-spacing: -1.01px;
+    color: var(--min-color);
+    cursor: pointer;
+}
+
+.home .card-log .card-info .card-foot span a.done {
+    display: block;
+    padding-top: 30px;
+}
+
+
+.home .card-log .card-info .card-foot span a {
+    display: block;
+    font: normal normal normal 20px/27px Gadugi;
+    letter-spacing: -0.96px;
+    color: #30DA7D;
+    margin-top: 10px;
+}
+
+.home .card-log .card-info .card-foot p {
+    font: normal normal normal 19px/26px Gadugi;
+    letter-spacing: -0.91px;
+    color: var(--min-color);
+    margin-top: 21px;
+}
+
+.home .card-log .card-info .card-foot p a {
+    color: #30DA7D;
+}
+
+.home .back .background-image {
+    background-image: url(../images/Data/Image\ 7.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: -20%;
+}
+
+/* end home  */
+
+/* start media  */
+
+@media (max-width:991px) {
+    .home .container .card-log {
+        width: 710px;
+    }
+    .home .card-log .card-info .card-form button ,
+    .home .card-log .card-info .card-form input {
+        width: 660px;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    .home .container .card-log {
+        width: 510px;
+    }
+    .home .card-log .card-info .card-form button ,
+    .home .card-log .card-info .card-form input {
+        width: 460px;
+    }
+}
+
+@media (max-width: 550px) {
+    .home .container .card-log {
+        width: 350px;
+    }
+    .home .card-log .card-info .card-form button ,
+    .home .card-log .card-info .card-form input {
+        width: 300px;
+    }
+    .home .card-log .card-info .card-foot span a.done {
+        padding-top: 10px;
+    }
+}

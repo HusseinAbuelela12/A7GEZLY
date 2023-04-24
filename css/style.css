@@ -1,0 +1,784 @@
+/* start variables */
+
+:root {
+    --main-color: #003D2D;
+    --secondary-color: #117C13;
+    --background-color: #FAFFF6;
+}
+
+/* end variables */
+
+/* start global rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto ;
+}
+
+/* end global rules */
+/* start header */ 
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-bottom: 1px solid #707070;
+}
+
+header .header-content .header-logo {
+    flex-basis: 30%;
+}
+
+header .header-content .header-logo img {
+    width: 265px;
+    height: 265px;
+}
+
+header .header-links {
+    position: relative;
+}
+
+header .header-links i {
+    padding: 20px;
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+header .header-links nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .header-links nav ul li a {
+    font: normal normal normal 26px/35px Gadugi;
+    letter-spacing: -1.25px;
+    color: var(--main-color);
+    opacity: 1;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+
+header .header-links nav ul li a.active {
+    font: normal normal normal 26px/35px Gadugi;
+    letter-spacing: -1.25px;
+    color: var(--secondary-color);
+    opacity: 1;
+}
+
+header .header-links nav ul li a.btn {
+    font: normal normal bold 21px/28px Gadugi;
+    letter-spacing: -1.01px;
+    color: #5A6155;
+    opacity: 1;
+    margin-right: 20px;
+    background: #D2FFF3;
+    border: 1px solid #DFF0B6;
+    border-radius: 22px;
+    padding: 5px 10px;
+}
+
+header .header-links nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* end header */ 
+/* start home */
+
+.home {
+    background-color: var(--background-color);
+}
+
+.home-info {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.home-info::before {
+    content: "";
+    position: absolute;
+    top: 115px;
+    left: 100px;
+    width: 1140px;
+    height: 651px;
+    background: #E8FFD2;
+    border-radius: 73px;
+    opacity: 0.36;
+}
+
+.home-info .home-text {
+    margin-left: 49px;
+    position: relative;
+    margin-top: 204px;
+    flex-basis: 60%;
+}
+
+.home-info .home-text span {
+    text-align: left;
+    font: normal normal bold 26px/51px Gadugi;
+    letter-spacing: -1.25px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.home-info .home-text p {
+    font: normal normal normal 26px/51px Gadugi;
+    letter-spacing: -1.25px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.home-info .home-text p span{
+    font: normal normal normal 26px/51px Gadugi;
+    text-transform: capitalize;
+}
+
+.home-info img {
+    position: relative;
+    width: 343px;
+    height: 343px;
+    background: transparent url('img/pitch.png') 0% 0% no-repeat padding-box;
+    box-shadow: 0px 46px 6px #00000029;
+    opacity: 1;
+    margin-top: 204px;
+    margin-right: 40px;
+}
+
+.home .container .background-image {
+    background-image: url(../images/Data/Image\ 7.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 50px;
+}
+
+/* end home */
+
+/* start about */
+
+.about {
+    margin: 150px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .about-info {
+    flex-basis: 35%;
+    position: relative;
+}
+
+.about .about-info span {
+    letter-spacing: -1.4px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 27px;
+}
+
+.about .about-info::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: -37px;
+    width: 351px;
+    height: 444px;
+    background: #78FFB5 0% 0% no-repeat padding-box;
+    opacity: 0.4;
+    transform: skewY(15deg);
+}
+
+.about .about-info p {
+    font: normal normal normal 26px/35px Yu Gothic UI;
+    letter-spacing: -1.25px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    position: relative;
+}
+
+.about .about-video {
+    border-radius: 10px;
+    flex-basis: 40%;
+}
+
+.about .about-video video {
+    width: 627px;
+    border-radius: 8%;
+    height: 385px;
+}
+
+/* end about */
+/* start stadium */
+
+.stadium {
+    padding: 200px 0;
+    background-color: var(--background-color);
+}
+
+.stadium .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stadium .stadium-info {
+    flex-basis: 45%;
+    z-index: 99999;
+}
+
+.stadium .stadium-info span {
+    letter-spacing: -1.54px;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 46px;
+}
+
+.stadium .stadium-info p {
+    font: normal normal normal 26px/35px Yu Gothic UI;
+    letter-spacing: -1.25px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    }
+
+.stadium .stadium-items {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.stadium .stadium-items::before {
+    content: "";
+    position: absolute;
+    width: 1080px;
+    height: 651px;
+    background: #E8FFD2 0% 0% no-repeat padding-box;
+    border-radius: 73px;
+    opacity: 0.84;
+    left: -500px;
+    top: 80px;
+}
+
+.stadium .stadium-items .stadium-item-1 {
+    flex-basis: 40%;
+    margin-top: -35px;
+    position: relative;
+}
+
+.stadium .stadium-items .stadium-item-2 {
+    flex-basis: 40%;
+    margin-top: 35px;
+    position: relative;
+}
+
+.stadium .stadium-items .box {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    width: 304px;
+    height: 342px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 36px;
+    z-index: -1;
+}
+
+.stadium .stadium-items .box {
+    margin-top: 90px;
+}
+
+.stadium .stadium-items .box.mg {
+    margin-left: 50px;
+}
+
+.stadium .stadium-items .box img {
+    height: 140px;
+    margin-top: 23px;
+}
+
+.stadium .stadium-items .box h4 {
+    font: normal normal bold 29px/39px GE Aridi Naskh;
+    letter-spacing: -1.39px;
+    color: var(--main-color);
+    margin-bottom: 25px;
+}
+
+.stadium .stadium-items .box p {
+    font: normal normal normal 14px/19px Segoe UI;
+    color: var(--main-color);
+}
+
+/* end stadium */
+/* start statistics */
+
+.statistics {
+    background-color: var(--background-color);
+}
+
+.statistics .statistics-head {
+    margin-left: 70px;
+    margin-bottom: 96px;
+}
+
+.statistics .statistics-head span {
+    font: normal normal normal 26px/35px Yu Gothic UI;
+    letter-spacing: -1.25px;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.statistics .statistics-head h3 {
+    font-size: 40px;
+    letter-spacing: -2.11px;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.statistics .content-items {
+    margin: 0 60px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+    grid-column-gap: 40px;
+    justify-content: center;
+    grid-row-gap: 60px;
+}
+
+.statistics .content-items .item {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #76DCA6;
+    border-radius: 38px;
+    text-align: center;
+    min-height: 450px;
+}
+
+.statistics .content-items .item img {
+    width: 209px;
+    height: 233px;
+    margin: 17px 0;
+}
+
+.statistics .content-items .item h3 {
+    font: normal normal bold 54px/63px Trebuchet MS;
+    letter-spacing: -2.59px;
+    color: var(--main-color);
+    margin: 20px 0;
+}
+
+.statistics .content-items .item span {
+    font: normal normal normal 30px/41px Yu Gothic UI;
+    letter-spacing: -1.78px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+/* end statistics */
+/* start Create account or Sign in */
+
+.create-account {
+    background-color: var(--background-color);
+    padding-top: 90px;
+    padding-bottom: 150px;
+}
+
+.create-account .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    border-radius: 108px;
+    min-height: 374px;
+    margin: 40px;
+}
+
+.create-account .content-info {
+    flex-basis: 50%;
+    max-width: 100%;
+}
+
+.create-account .content-info h3 {
+    font: normal normal bold 44px/58px GE Aridi Naskh;
+    letter-spacing: -2.11px;
+    color: var(--main-color);
+}
+
+.create-account .content-info span {
+    font: normal normal normal 26px/35px Yu Gothic UI;
+    letter-spacing: -1.25px;
+    color: var(--main-color);
+}
+
+.create-account .content-box {
+    background: #9CE1B2 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 73px;
+    width: 410px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    text-align: center;
+}
+
+.create-account .content-box .box-info {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 80px;  
+    position: absolute;
+    top: 50%;
+    left: -60px;  
+    transform: translateY(-50%);
+    width: 530px;
+    height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.create-account .content-box .box-info .btn-2 ,
+.create-account .content-box .box-info .btn-1 {
+    border: 1px solid #707070;
+    border-radius: 28px;
+    font: normal normal bold 25px/33px GE Aridi Naskh;
+    letter-spacing: -1.2px;
+    width: 249px;
+    height: 56px;
+    cursor: pointer;
+}
+.create-account .content-box .box-info .btn-1 {
+    background: var(--main-color) 0% 0% no-repeat padding-box;
+}
+
+.create-account .content-box .box-info .btn-1 a {
+    color: #FFFFFF;
+}
+
+.create-account .content-box .box-info .btn-2 {
+    background: #9CE1B2 0% 0% no-repeat padding-box;
+    
+}
+
+.create-account .content-box .box-info .btn-2 a {
+    color: var(--main-color);
+}
+
+.create-account .content-box span {
+    display: block;
+    font: normal normal bold 16px/22px GE Aridi Naskh;
+    letter-spacing: -0.77px;
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+.create-account .content-box button {
+    background: #003D2D 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    width: 204px;
+    height: 46px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.create-account .content-box button a {
+    font: normal normal bold 20px/26px GE Aridi Naskh;
+    letter-spacing: -0.96px;
+    color: #FFFFFF;
+
+}
+
+/* end Create account or Sign in */
+/* start footer */
+
+footer {
+    min-height: 343px;
+    background: #003D2D 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+}
+
+footer .footer-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-items .item {
+    text-align: center;
+}
+
+footer .footer-items .item h4 {
+    font: normal normal bold 25px/33px GE Aridi Naskh;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+    margin-top: 59px;
+}
+
+footer .footer-items .item span {
+    display: block;
+    font: normal normal bold 20px/26px GE Aridi Naskh;
+    letter-spacing: -0.96px;
+    color: #FFFFFF;
+}
+
+footer .footer-items .item span.norm {
+    font: normal normal bold 15px/20px GE Aridi Naskh;
+    letter-spacing: -0.96px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+footer .footer-items .item .social-icon a img {
+    width: 44px;
+    height: 44px;
+    margin-right: 30px;
+}
+
+footer .copy-rights h4 {
+    text-align: center;
+    font: normal normal normal 20px/27px Segoe UI;
+    color: #FFCECE;
+    margin: 30px 0;
+}
+
+/* end footer */
+
+/* start media */
+
+@media (min-width: 992px) {
+    header .header-links i {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .stadium .stadium-items::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .home-info .home-text {
+        margin-left: 49px;
+        margin-right: 49px;
+        text-align: center;
+        flex-basis: 100%;
+        margin-top: 60px;
+    }
+    .home-info img {
+        margin: auto;
+        margin-top: 60px;
+    }
+    .home-info::before {
+        display: none;
+    }
+    .about {
+        margin: 110px 0;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .about-info {
+        flex-basis: 100%;
+        margin: 0 25px;
+        text-align: center;
+    }
+    .about .about-info::before {
+        display: none;
+    }
+    .about .about-video {
+        flex-basis: 100%;
+    }
+    .about .about-video video {
+        width: 427px;
+    }
+    .create-account .content ,
+    .stadium .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .stadium .stadium-info {
+        text-align: center;
+        margin: 0 30px;
+    }
+    .statistics .statistics-head {
+        text-align: center;
+        margin-bottom: 96px;
+        margin-left: 0;
+    }
+    .create-account .content-info {
+        text-align: center;
+        padding: 80px 0;
+    }
+    .create-account .content-box {
+        margin-bottom: 70px;
+    }
+}
+@media (max-width:991px) {
+    header .header-links .hove {
+        cursor: pointer;
+    }
+    header .header-links nav{
+        height: 600px;
+        position: absolute;
+        top: 120%;
+        right: 0;
+        width: 100vw;
+        z-index: 99999;
+        transform: translateX(0);
+        display: none;
+        background-color: #FFFFFF;
+        transition:all 0.6s ease;
+    }
+    header .header-links nav.open {
+        transform: translateX(120%);
+        display: block;
+    }
+    header .header-links .hove + nav {
+        display: block;
+        position: absolute;
+    }
+    header .header-links nav ul {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    header .header-links nav ul li {
+        display: block;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    header .header-links i {
+        display: block;
+    }
+    
+}
+@media (max-width: 767px) {
+    header .header-content .header-logo img {
+        width: 200px;
+        height: 200px;
+    }
+    .home-info .home-text span {
+        font: normal normal bold 26px/40px Gadugi;
+    }
+    
+    .home-info .home-text p {
+        font: normal normal normal 26px/40px Gadugi;
+    }
+    
+    .home-info .home-text p span{
+        font: normal normal normal 26px/40px Gadugi;
+    }
+    .about .about-video video {
+        width: 359px;
+        height: 385px;
+    }
+    footer .footer-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stadium .stadium-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .stadium .stadium-items .box {
+        margin-left: 0;
+    }
+    .stadium .stadium-items .box.mg {
+        margin-left: 0;
+    }
+    .statistics .statistics-head h3 {
+        font-size: 30px;
+        letter-spacing: -1.8px;
+    }
+}
+
+@media (max-width: 550px) {
+    .create-account .content {
+        margin: 0;
+    }
+    .create-account .content-info {
+        margin: 0 10px;
+    }
+    .create-account .content-info h3 {
+        margin-bottom: 10px;
+    }
+    .create-account .content-box {
+        width: 356px;
+    }
+    .create-account .content-box .box-info { 
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 80px;  
+        position: absolute;
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50%, -74%);
+        width: 300px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .create-account .content-box button ,
+    .create-account .content-box .box-info .btn-2 ,
+    .create-account .content-box .box-info .btn-1 {
+        width: 170px;
+        height: 56px;
+
+    }
+}
+@media (max-width: 500px) {
+    .statistics .content-items {
+        margin: 0 15px;
+    }
+}
+
+/* end media */

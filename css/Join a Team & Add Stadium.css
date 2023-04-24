@@ -1,0 +1,95 @@
+/* start variables */
+:root {
+    --min-color: #003D2D;
+}
+
+/* end variables */
+
+/* start header  */
+
+header .header-links i {
+    text-align: right;
+}
+
+header .header-links {
+    flex-basis: 50%;
+}
+
+header .header-links nav li img {
+    width: 64px;
+}
+
+header .header-content {
+    background-color: #FFFFFF;
+    box-shadow: 0  #ffffff;
+}
+
+/* end header  */
+/* start home  */
+
+body {
+    background-color: #FAFFF6;
+
+}
+
+.home-cards {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-cards .card {
+    width: 347px;
+    height: 463px;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    z-index: 3;
+    margin-top: 50px;
+    border-radius: 38px;
+}
+
+.home-cards .card img {
+    margin: 58px 67px 22px 67px;
+    width: 212px;
+}
+
+.home-cards .card .img-2 {
+    margin: 110px 105px 73px 130px;
+    width: 108px;
+}
+
+.home-cards .card .img-3 {
+    margin: 93px 105px 65px 105px;
+    width: 137px;
+}
+
+.home-cards .card h3 {
+    font: normal normal bold 31px/41px Gadugi;
+    letter-spacing: -1.49px;
+    color: var(--min-color);
+}
+
+
+.home .back .background-image {
+    background-image: url(../images/Data/Image\ 7.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: -15%;
+}
+/* end home  */
+
+/* start media  */
+
+@media (max-width:991px) {
+    .home-cards {
+        flex-direction: column;
+    }
+    
+}
+
+
+/* end media  */

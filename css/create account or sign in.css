@@ -1,0 +1,15 @@
+/* start header  */
+
+header .header-links {
+    flex-basis: 40%;
+}
+
+/* end header  */
+
+/* start media  */
+
+@media (max-width:991px) {
+    header .header-links i {
+        text-align: right;
+    }
+}
